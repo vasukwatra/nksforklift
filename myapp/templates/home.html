@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NKS-HOME</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{%  static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+
+    <!-- Custom fonts for this template
+    <link href="{%  static 'https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i' %}" rel="stylesheet">
+    <link href="{%  static 'https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i' %}" rel="stylesheet">
+-->
+    <!-- Custom styles for this template -->
+   <link href="{%  static 'css/business-casual.min.css' %}" rel="stylesheet">
+
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/Linearicons-Free-v1.0.0/icon-font.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/css-hamburgers/hamburgers.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/animsition/css/animsition.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/select2/select2.min.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'vendor/daterangepicker/daterangepicker.css' %}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+<!--===============================================================================================-->
+  </head>
+
+  <body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+
+      <span class="site-heading-lower">NKS FORKLIFT</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">nks</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+
+           <li class="nav-item active px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/home/">Home
+                <span class="sr-only">(current)</span>
+              </a>
+              <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/about/">About Us</a>
+            </li>
+             <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/courses/">Courses</a>
+            </li>
+            <li class="nav-item  px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/safetyrules/">Safety Rules</a>
+            </li>
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/Schedule/">Schedule</a>
+            </li>
+
+
+            <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/contact/">Contact</a>
+            </li>
+              <li class="nav-item px-lg-4">
+              <a class="nav-link text-uppercase text-expanded" href="/myapp/findus/">Find Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-section about-heading">
+      <div class="container">
+
+
+        <div class="intro-text">
+            <center><b><font color="white">
+                <div class="intro-lead-in"><strong><h1>Welcome To Our WareHouse</h1></strong></div>
+          <br><div class="intro-heading text-uppercase"><strong><h1>It's Nice To Meet You</h1></strong></div>
+                <br> <center> <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="{%  static 'img\crawler_crane_glass_lifting.jpg' %}" alt=""></center>
+          <br><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/myapp/about/">Tell Me More</a>
+                <br><br><br><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="/myapp/gallery/">Gallery</a>
+            </font>  </b></center>
+
+        </div>
+      </div>
+    </section>
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'js/main.js' %}"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+  <br>
+  <br>
+
+    <footer class="footer text-faded text-center py-5">
+                    <div class="single_widget_area">
+                        <div class="col-md-4 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Around the Web</h4>
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.facebook.com/nksforklift">
+                  <i class="fa fa-fw fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.instagram.com/nksforklift/">
+                  <i class="fa fa-fw fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://plus.google.com/101894805226238606062">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                </a>
+              </li>
+                 <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="https://www.youtube.com/channel/UCLQwGHtB8OaxOD8zPNP5Udg">
+                  <i class="fa fa-fw fa-youtube"></i>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+             <div class="container">
+            <div class="btn-block">
+                <a href="/myapp/login/" class="btn btn-warning">ADMIN LOGIN</a>
+            </div>
+        </div>
+
+                        <!-- Footer Menu -->
+                        <div class="footer_menu">
+                            <nav class="navbar navbar-expand-lg justify-content-end">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                                <div class="collapse navbar-collapse" id="footerNavContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/myapp/home"><b>Home</b></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/myapp/about/"><b>About Us</b></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/myapp/courses"><b>Courses</b></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/myapp/safetyrules"><b>SafetyRules</b></a>
+                                        </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/myapp/Schedule/"><b>Schedule</b></a>
+            </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/myapp/contact"><b>Contact</b></a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/myapp/findus"><b>Find Us</b></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                       <div>
+                  <p class="m-0 small"><B>Copyright &copy; MY BRV @2018</B></p>
+              </div>
+      <div class="col-12 col-lg-8">
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
+
+  </body>
+
+</html>

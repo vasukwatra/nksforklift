@@ -1,0 +1,159 @@
+.flickity-container .main-carousel .carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 350px;
+  border-radius: 0px;
+  margin-right: 0px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: filter .7s;
+  -moz-transition: filter .7s;
+  -o-transition: filter .7s;
+  transition: filter .7s;
+}
+.flickity-container .main-carousel .carousel-cell::before {
+  display: block;
+  text-align: center;
+  line-height: 350px;
+  font-size: 80px;
+  color: white;
+}
+.flickity-container .main-carousel .carousel-cell._1 {
+  background: url(https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+.flickity-container .main-carousel .carousel-cell._2 {
+  background: url(https://images.pexels.com/photos/374870/pexels-photo-374870.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+.flickity-container .main-carousel .carousel-cell._3 {
+  background: url(https://images.pexels.com/photos/242124/pexels-photo-242124.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+.flickity-container .main-carousel .carousel-cell._4 {
+  background: url(https://images.pexels.com/photos/97906/pexels-photo-97906.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+.flickity-container .main-carousel .carousel-cell._5 {
+  background: url(https://images.pexels.com/photos/242133/pexels-photo-242133.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+.flickity-container .main-carousel .carousel-cell._6 {
+  background: url(https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+  background-size: cover;
+  background-position: center center;
+}
+.flickity-container .main-carousel .carousel-cell.is-selected {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.flickity-container .main-carousel .flickity-button {
+  position: absolute;
+  background: #fff;
+  border: none;
+}
+.flickity-container .main-carousel .flickity-page-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: -25px;
+  height: 25px;
+  background: #272727;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+.flickity-container .main-carousel .flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.7;
+  cursor: pointer;
+}
+.flickity-container .main-carousel .flickity-page-dots .dot.is-selected {
+  background: #ffc000;
+  opacity: 1;
+}
+.flickity-container .main-carousel.is-fullscreen .carousel-cell {
+  height: 100%;
+}
+.flickity-container .main-carousel img {
+  display: block;
+  max-height: 100%;
+}
+.flickity-container .main-carousel.is-fullscreen img {
+  max-width: 100%;
+}
+.flickity-container .flickity-enabled.is-fullscreen {
+  background-color: #fff;
+  padding-bottom: 0;
+}
+.flickity-container .flickity-enabled.is-fullscreen .carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  margin-right: 0px;
+}
+.flickity-container .flickity-enabled.is-fullscreen .carousel-cell::before {
+  display: block;
+  text-align: center;
+  line-height: 350px;
+  font-size: 80px;
+  color: white;
+}
+.flickity-container .flickity-enabled.is-fullscreen .flickity-page-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  height: 5px;
+  background: #272727;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+.flickity-container .flickity-enabled.is-fullscreen .flickity-page-dots .dot {
+  display: inline-block;
+  margin: 0 8px;
+  background: #272727;
+  border-radius: 50%;
+  opacity: 0.5;
+  cursor: pointer;
+  height: 5px;
+  width: calc(100% / 6);
+  margin: 0;
+  border-radius: 0;
+}
+.flickity-container .flickity-enabled.is-fullscreen .flickity-page-dots .dot.is-selected {
+  background: #ffc000;
+  opacity: 1;
+}
+.flickity-container .progress-bar {
+  height: 10px;
+  width: 0;
+  background: #ffc000;
+}
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+}
